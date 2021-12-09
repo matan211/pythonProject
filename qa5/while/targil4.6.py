@@ -9,4 +9,4 @@ while i in range(str1.__len__()):
     i += 1
 
 print(counter)
-print(num)
+
