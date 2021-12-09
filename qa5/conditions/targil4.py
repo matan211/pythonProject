@@ -1,0 +1,5 @@
+num1 = input("enter number: ")
+num2 = input("enter number: ")
+num1 = int(num1)
+num2 = int(num2)
+print(abs(num1-num2))
