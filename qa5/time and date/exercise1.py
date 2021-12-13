@@ -1,0 +1,17 @@
+from datetime import datetime
+now = datetime.now() #current time and date
+print(now)
+year = now.strftime("%Y")
+print(f"year is {year}")
+month = now.strftime("%m")
+print(f"month is {month}")
+weekNum = now.strftime("%V")
+print("week number is " + weekNum)
+weekday = now.strftime("%A")
+print("weekday is " + weekday)
+dayOfYear = now.strftime("%j")
+print("day of year is " + dayOfYear)
+dayOfMonth = now.strftime("%e")
+print("day of month is " + dayOfMonth)
+dayOfWeek = now.strftime("%w")
+print("day of week is " + dayOfWeek)
