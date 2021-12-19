@@ -1,0 +1,11 @@
+list1=[1,2,3,4]
+print(list1)
+list1.append(100)
+print(list1)
+print(list1*3)
+list1=list1*3
+list1.remove(100)
+print(list1)
+print(list1.count(100))
+print(list1.index(100))
+print(list1.__len__())
