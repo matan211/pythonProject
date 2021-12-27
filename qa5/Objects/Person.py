@@ -5,6 +5,10 @@ class Person:
         self.age = age
         self.num_of_kids = num_of_kids
 
+    def __repr__(self):
+        print('inside __repr__')
+        return f"{self.name} age: {self.age} number of children: {self.num_of_kids}"
+
     def show(self):
         """prints the parameters"""
         print(self.name)
@@ -34,3 +38,14 @@ if my_person.hasChildren():
 else:
     print("hasn't children")
 my_person.ageGroup()
+
+# list
+p1 = Person('Dani', 18, 0)
+p2 = Person('Gadi', 40, 2)
+p3 = Person('Shifra', 30, 1)
+list1 = [p1, p2, p3]
+print(list1[2])
+for i in list1:
+    print(i)
+p1.height = 178
+print(p1)
