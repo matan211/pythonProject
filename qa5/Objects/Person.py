@@ -29,23 +29,23 @@ class Person:
         elif 61 <= self.age <= 120:
             print("Senior")
 
+if __name__ == '__main__':
+    #     main program
+    my_person = Person('Matan', 21, 0)
+    my_person.show()
+    if my_person.hasChildren():
+        print("has children")
+    else:
+        print("hasn't children")
+    my_person.ageGroup()
 
-#     main program
-my_person = Person('Matan', 21, 0)
-my_person.show()
-if my_person.hasChildren():
-    print("has children")
-else:
-    print("hasn't children")
-my_person.ageGroup()
-
-# list
-p1 = Person('Dani', 18, 0)
-p2 = Person('Gadi', 40, 2)
-p3 = Person('Shifra', 30, 1)
-list1 = [p1, p2, p3]
-print(list1[2])
-for i in list1:
-    print(i)
-p1.height = 178
-print(p1)
+    # list
+    p1 = Person('Dani', 18, 0)
+    p2 = Person('Gadi', 40, 2)
+    p3 = Person('Shifra', 30, 1)
+    list1 = [p1, p2, p3]
+    print(list1[2])
+    for i in list1:
+        print(i)
+    p1.height = 178
+    print(p1)

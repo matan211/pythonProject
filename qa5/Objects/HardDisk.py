@@ -5,7 +5,7 @@ class HardDisk:
         self.total = total_space
 
     def show(self):
-        print(f"occupied space: {self.occupied}, total space: {self.total}, files: {self.files}")
+        return f"occupied space: {self.occupied}, total space: {self.total}, files: {self.files}"
 
     def freeSpace(self):
         return (self.total - self.occupied)
@@ -30,9 +30,9 @@ class HardDisk:
 
 
 # main
-hd1 = HardDisk(0, 0)
-hd1.show()
-for i in range(5):
-    hd1.addFile(int(input("enter file space: ")))
-hd1.delFile(int(input("enter file space: ")))
-hd1.show()
+# hd1 = HardDisk(0, 0)
+# hd1.show()
+# for i in range(5):
+#     hd1.addFile(int(input("enter file space: ")))
+# hd1.delFile(int(input("enter file space: ")))
+# hd1.show()
