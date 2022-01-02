@@ -38,6 +38,7 @@ class Student:
             new_grade = 100
         self.grades[subject] = new_grade
 
+
     def average(self):
         sum = 0
         for i in self.grades:

@@ -1,4 +1,6 @@
-from unittest import TestCase
+from unittest import TestCase, mock
+from unittest.mock import patch
+
 from Course import Course
 from Student import Student
 
